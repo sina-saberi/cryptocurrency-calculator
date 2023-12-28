@@ -1,0 +1,23 @@
+export interface currency {
+    "id": string,
+    "index": number,
+    "askMarginPercent": number,
+    "bidMarginPercent": number,
+    "lastAsk": number,
+    "lastBid": number,
+    "lastAvg": number,
+    "lastHigh": number,
+    "lastLow": number,
+    "lastChange24Percent": number,
+    "lastChange24": number,
+    "hastLastRate": boolean,
+    "baseName": string,
+    "targetName": string,
+    "baseLocalizedName": string,
+    "targetLocalizedName": string,
+    "basePrecision": number,
+    "targetPrecision": number,
+    "isActive": boolean,
+    "latestRateUpdateTime": string,
+    "registrationTime": string
+}
