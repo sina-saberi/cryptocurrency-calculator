@@ -40,13 +40,13 @@ const Home: NextPage<HomeProps> = ({ items }) => {
 
 
   return (
-    <main className="h-screen flex items-center justify-center min-h-[400px]">
-      <div className="w-2/3 mx-auto">
+    <main className="h-screen flex  items-center justify-center min-h-[400px]">
+      <div className="w-2/3 mx-auto max-w-sm lg:max-w-none">
         <h3 className="font-bold text-2xl">{`${constant.cryptocurrencyCalculatorTo} ${currency.targetLocalizedName}`}</h3>
         <p className="text-base my-2">{`${constant.professionalToolToConvertDigitalCurrencyTo} ${currency.targetLocalizedName}`}</p>
         <div className="bg-gray-100 border-2 rounded-md p-8">
-          <div className="flex w-full">
-            <div className="w-full flex items-end justify-center gap-x-3">
+          <div className="flex w-full ">
+            <div className="w-full flex items-center justify-center gap-3 flex-col lg:flex-row lg:items-end">
               <Input name="from" onChange={changeFrom} value={formatInputValue(state.from)} label={constant.iPay} badge={{ name: currency.baseLocalizedName, shorName: currency.id.split("_")[0] }} />
               <button className="bg-white rounded-full flex items-center justify-center border shadow-sm w-8 h-8 flex-shrink-0 ">
                 +
