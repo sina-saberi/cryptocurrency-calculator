@@ -57,7 +57,7 @@ const Home: NextPage<HomeProps> = ({ items }) => {
           </div>
           <p className="text-xs mt-3 flex items-center">
             <span className="w-2 h-2 bg-green-500 flex rounded-full ml-1"></span>
-            {constant.theInstantPurchaseRate.replace("{amount}", "1").replace("{tax}", "234234")}
+            {constant.theInstantPurchaseRate.replace("{amount}", "1").replace("{tax}", currency.lastAvg.toLocaleString())}
           </p>
         </div>
       </div>
